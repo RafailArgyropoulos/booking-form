@@ -1,4 +1,4 @@
-emailjs.init("SP4ADXtsq9ganYnB_");
+emailjs.init("ADD-YOUR-Public Key");
 
 const form = document.getElementById("booking-form");
 const resultDiv = document.getElementById("result");
@@ -22,7 +22,7 @@ window.addEventListener("load", calculateNights);
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  emailjs.sendForm("service_odbjdsu", "template_4r04dxf", form)
+  emailjs.sendForm("ADD-YOUR-service-key", "ADD-YOUR-template-key", form)
     .then(() => {
       resultDiv.textContent = "Message sent successfully!";
       form.reset();
